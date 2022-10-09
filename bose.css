@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; 
+    background: linear-gradient(white,black);
+}
+header {
+    min-height: 20vh;
+    padding: 0px;
+}
+
+.entete{
+    display: flex;
+    justify-content: space-around;
+    gap: 80vw;
+    font-size: 30px;
+}
+.bose {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.image_ecouteurs {
+    display: flex;
+    justify-content: space-between;
+    object-fit: content;
+}
+.image_ecouteurs img {
+    height: 650px;
+}
+.coureur h2{
+    text-align: left;
+    width: 200px;
+    text-align: justify;
+}
+
+.coureur{
+    background-image: url("coureur.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+
+}
+
+.texte {
+    text-align: center;
+    justify-content: center;
+    padding: 80px;
+    font-size: 50px;
+    color:rgb(145, 3, 3);
+
+}
+
+.liens{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.texte_super_long {
+    display: flex;
+    justify-content: center;
+}
+
+.texte_super_long h3{
+    text-align: center;
+    font-size: 30px;
+    width: 80vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .image_ecouteurs img {
+        height: 300px;
+    }
+    .coureur {
+        height: 300px;
+    }
+    .coureur h2{
+        font-size: 15px;
+    }
+    .entete{
+        gap: 50vw;
+    } 
+
+    
+}
+
+@media screen and (max-width: 720px) {
+    .image_ecouteurs img {
+        height: 100px;
+    }
+    .coureur{
+        height: 100px;
+    }
+    .coureur h2{
+        font-size: 10px;
+        width: 250px;
+    }   
+}
